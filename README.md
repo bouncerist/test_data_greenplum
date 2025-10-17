@@ -22,7 +22,7 @@ docker volume create greenplum_data
 
 ## RUN the sql scripts
 
-  sql_scripts/create_tables_gp.sql
+  sql_scripts/create_tables_gp.sql <br />
   sql_scripts/func_generate_and_trancate.sql
 
 ## Call data generation
@@ -42,3 +42,4 @@ docker volume create greenplum_data
 
 
   docker-compose down -v
+
