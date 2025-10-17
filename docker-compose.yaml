@@ -1,0 +1,13 @@
+services:
+  greenplum_master:
+    container_name: greenplum
+    image: gazetdinovir/greenplum:6.25.3-slim-amd64
+    restart: always
+    volumes:
+      - greenplum_data:/data
+    ports:
+      - "5434:5432"
+
+volumes:
+    greenplum_data:
+      external: true
