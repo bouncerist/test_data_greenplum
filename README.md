@@ -9,14 +9,14 @@ docker volume create greenplum_data
 
 ## Create database
 
-  docker exec -it greenplum bash
+  docker exec -it greenplum bash <br />
   sudo -u gpadmin /usr/local/gpdb/bin/createdb database_name
 
 ## Open DBeaver and create a connection (select PostgreSQL):
 
-  Database: database_name
-  Port: 5433
-  Username: gpadmin
+  Database: database_name <br />
+  Port: 5433 <br />
+  Username: gpadmin <br />
   Password: #empty field
 ### You can create your user through /usr/local/gpdb/bin/createdb
 
@@ -39,5 +39,6 @@ docker volume create greenplum_data
 
 ### Use explain analysis to see how data is distributed
 ## Stop containers
+
 
   docker-compose down -v
